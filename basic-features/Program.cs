@@ -1,37 +1,38 @@
-﻿var names = new List<string> {"Allen"};
-names.Add("Blake");
-names.Add("Diane");
+﻿var myList = new List<string> { "Blake", "Diane", "Allen" };
 
-// iterating using foreach loop
-foreach (var name in names)
-{
-    Console.WriteLine(name);
-}
+var copiedList = ListExtension.CopyList(myList);
 
-// iterating using for loop 
-for (int i = 0; i < names.Count; i++)
-{
-    Console.WriteLine(names[i]);
-}
+foreach (var elem in copiedList) Console.WriteLine(elem);
 
-interface IRenderable
+internal interface IRenderable
 {
     public int Render(object gameObject);
 }
 
-interface IGameObject
+internal interface IGameObject
 {
     public int Collide(object gameObject);
 }
 
-class Monster : IRenderable, IGameObject
+internal class Monster : IRenderable, IGameObject
 {
+    public int Collide(object gameObject)
+    {
+        return 1;
+    }
+
     public int Render(object gameObject)
     {
         return 1;
     }
-    public int Collide(object gameObject)
+}
+
+internal class ListExtension
+{
+    public static List<T> CopyList<T>(List<T> from)
     {
-        return 1;
+        var to = new List<T>();
+        foreach (var elem in from) to.Add(elem);
+        return to;
     }
 }
