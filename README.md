@@ -9,3 +9,9 @@
 
 - SOLID: Demonstrate good and bad examples of applying SOLID principles
 - Rust: Complete the [Rustlings](https://github.com/rust-lang/rustlings) course
+
+## The framing: Hu's House
+
+Because there's nothing like explaining programming concepts with food metaphors.
+
+Mr Hu wants to open a cool new restaurant just down the street. He needs our help to cook up some well-designed software to help him manage his new restaurant. 
