@@ -1,12 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sandbox", "sandbox\sandbox.csproj", "{3817B049-3BAF-4BC3-868B-5A53D53D2A1C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox", "Sandbox\Sandbox.csproj", "{3817B049-3BAF-4BC3-868B-5A53D53D2A1C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "visitor", "visitor\visitor.csproj", "{84143A22-F95D-4512-ADDB-3A6408ACCF94}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "design-patterns", "design-patterns", "{07183AD9-9AE4-442B-B199-FE4E3BCF5A96}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesignPatterns", "DesignPatterns", "{07183AD9-9AE4-442B-B199-FE4E3BCF5A96}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "csharp-features", "csharp-features", "{93BA5EE9-9980-4F4C-AC42-EFD813D84057}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CsharpFeatures", "CsharpFeatures", "{93BA5EE9-9980-4F4C-AC42-EFD813D84057}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "factory", "factory\factory.csproj", "{BCDE0ABE-C263-4B55-87EF-995DF7CF783E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,9 +24,14 @@ Global
 		{84143A22-F95D-4512-ADDB-3A6408ACCF94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84143A22-F95D-4512-ADDB-3A6408ACCF94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84143A22-F95D-4512-ADDB-3A6408ACCF94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCDE0ABE-C263-4B55-87EF-995DF7CF783E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCDE0ABE-C263-4B55-87EF-995DF7CF783E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCDE0ABE-C263-4B55-87EF-995DF7CF783E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCDE0ABE-C263-4B55-87EF-995DF7CF783E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{84143A22-F95D-4512-ADDB-3A6408ACCF94} = {07183AD9-9AE4-442B-B199-FE4E3BCF5A96}
 		{3817B049-3BAF-4BC3-868B-5A53D53D2A1C} = {93BA5EE9-9980-4F4C-AC42-EFD813D84057}
+		{BCDE0ABE-C263-4B55-87EF-995DF7CF783E} = {07183AD9-9AE4-442B-B199-FE4E3BCF5A96}
 	EndGlobalSection
 EndGlobal
