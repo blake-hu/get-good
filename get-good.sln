@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "visitor", "visitor\visitor.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "design-patterns", "design-patterns", "{07183AD9-9AE4-442B-B199-FE4E3BCF5A96}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "features", "features", "{93BA5EE9-9980-4F4C-AC42-EFD813D84057}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "csharp-features", "csharp-features", "{93BA5EE9-9980-4F4C-AC42-EFD813D84057}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
