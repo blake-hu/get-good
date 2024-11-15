@@ -1,4 +1,4 @@
-﻿namespace factory;
+﻿namespace Factory;
 
 class Program
 {
