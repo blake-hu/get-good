@@ -1,38 +1,21 @@
-﻿var myList = new List<string> { "Blake", "Diane", "Allen" };
+﻿namespace Sandbox;
 
-var copiedList = ListExtension.CopyList(myList);
-
-foreach (var elem in copiedList) Console.WriteLine(elem);
-
-internal interface IRenderable
+public class Program
 {
-    public int Render(object gameObject);
-}
+    private static readonly IEnumerable<IRun> Examples =
+    [
+        new Yield(),
+        new UnityExample(),
+        new Generics()
+    ];
 
-internal interface IGameObject
-{
-    public int Collide(object gameObject);
-}
-
-internal class Monster : IRenderable, IGameObject
-{
-    public int Collide(object gameObject)
+    internal static void Main(string[] args)
     {
-        return 1;
-    }
-
-    public int Render(object gameObject)
-    {
-        return 1;
-    }
-}
-
-internal class ListExtension
-{
-    public static List<T> CopyList<T>(List<T> from)
-    {
-        var to = new List<T>();
-        foreach (var elem in from) to.Add(elem);
-        return to;
+        foreach (var example in Examples)
+        {
+            Console.WriteLine();
+            Console.WriteLine(example.GetName());
+            example.Run();
+        }
     }
 }
